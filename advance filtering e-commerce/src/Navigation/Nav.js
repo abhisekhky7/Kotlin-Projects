@@ -1,22 +1,34 @@
 import "./Nav.css" ;
-import {FiHeart} from 'react-icons/fi'
-import {AiOutlineShoppingCart,AiOutlineUserAdd} from 'react-icons/ai'
+import {useSelector,useDispatch} from 'react-redux'
+import { useNavigate } from "react-router-dom";
+import { logoutUser } from '../userSlice/userSlice'
+import { useState } from "react";
+
 
 
 function Nav({query,handleInputChange}) {
+
+  const isLoggedin=useSelector(state=>state.user.isLoggedin)
+  const navigate=useNavigate()
+  const dispatch=useDispatch()
+  const handleNavigation=()=>{
+    isLoggedin?dispatch(logoutUser()):navigate("login")
+  }
+  
   return <nav>
     <div className="nav-container">
-
       <input 
-      onChange={handleInputChange}
+      // onChange={(e)=>setText(e.target.value)}
+       onChange={handleInputChange}
       type="text"
-      className="search-input"
+      className="navSearch"
       placeholder="Enter your search shoes"
       />
+      <button className="search-btn">Search</button>
       
     </div>
     <div className="profile-container">
-    <h1>Login</h1>
+    <button className="login-btn" onClick={()=>handleNavigation()}>{isLoggedin?"Logout":"Login"}</button>
     </div>
   </nav>
 }

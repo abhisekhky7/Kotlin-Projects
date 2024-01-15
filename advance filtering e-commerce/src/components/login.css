@@ -1,0 +1,25 @@
+.containerForm{
+    display:flex;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 20px;
+
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loginbtn{
+    padding:5px;
+    background-color:  rgb(63, 120, 206);
+    color:white;
+    font-size: 1.3rem;
+    border-radius:8px;
+}
+
+label{
+    font-size: 1.3rem;
+}

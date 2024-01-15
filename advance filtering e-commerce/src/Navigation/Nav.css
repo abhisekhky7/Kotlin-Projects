@@ -8,15 +8,16 @@ nav{
     margin-left: 2rem;
 }
 
-input{
-    padding: 12px 20px;
+.navSearch{
+    padding: 12px 15px;
     border:none;
     background: #f7f6f6;
     outline:none;
     margin-right:20px;
     border-radius:5px;
     position:relative;
-    width:14rem;
+    width:25rem;
+    font-size: 1rem;
 }
 
 .nav-icons{
@@ -24,4 +25,23 @@ input{
    height:1.5rem;
    margin-left: 2rem;
    color: #000;
+}
+
+.search-btn{
+    background-color: #f3f3f3;
+    padding:7px;
+    border:none;
+    outline: none;
+    font: 1em sans-serif;
+    margin-right: auto;
+}
+
+.login-btn{
+    background-color: #1171df;
+    padding:10px 10px;
+    border:none;
+    outline: none;
+    font: 1.2em sans-serif;
+    border-radius: 5px;
+    color:#f3f3f3
 }
