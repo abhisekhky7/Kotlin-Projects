@@ -3,7 +3,7 @@ import Input from "../../components/Input";
 
 function Category({ handleChange }) {
   return (
-    <div>
+    <div className="one">
       <h2 className="sidebar-title">Category</h2>
 
       <div>

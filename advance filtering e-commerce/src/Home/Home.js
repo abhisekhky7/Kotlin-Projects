@@ -9,9 +9,10 @@ import Card from "../components/Card";
 import "../index.css";
 
 
+
 export default function Home() {
     const [selectedCategory, setSelectedCategory] = useState(null);
-
+    
     // ----------- Input Filter -----------
     const [query, setQuery] = useState("");
   
@@ -32,6 +33,8 @@ export default function Home() {
     const handleClick = (event) => {
       setSelectedCategory(event.target.value);
     };
+
+   
   
     function filteredData(products, selected, query) {
       let filteredProducts = products;
@@ -63,6 +66,7 @@ export default function Home() {
             reviews={reviews}
             prevPrice={prevPrice}
             newPrice={newPrice}
+            
           />
         )
       );

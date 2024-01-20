@@ -1,0 +1,28 @@
+.testMe{
+    padding:5px;
+}
+
+.test2{
+    margin:5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    border:2px solid black;
+    
+}
+.total{
+    display: flex;
+    align-items: center;
+    margin:5px;
+    justify-content: end;
+
+}
+.total h2,h3 {
+   margin-right: 15px;
+}
+
+.removeBtn{
+    padding: 5px;
+}

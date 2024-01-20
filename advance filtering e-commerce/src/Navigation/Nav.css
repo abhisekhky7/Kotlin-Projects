@@ -45,3 +45,14 @@ nav{
     border-radius: 5px;
     color:#f3f3f3
 }
+.profile-container{
+    display: flex;
+    align-items: center;
+}
+.profile-container h1{ 
+    margin-left:15px;
+    margin-top: 10px;
+}
+.profile-container h1:hover{ 
+   cursor: pointer;
+}

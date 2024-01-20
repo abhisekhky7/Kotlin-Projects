@@ -3,19 +3,23 @@ import { FaShoppingCart } from "react-icons/fa";
 import Category from "./Category/Category.js";
 import Price from "./Price/Price.js";
 import Colors from "./Colors/Colors.js";
+import { useNavigate } from "react-router-dom";
 
-function Sidebar({handleChange}) {
+function Sidebar({ handleChange }) {
+
+  const navigate= useNavigate()
   return (
-    <>
-      <section className="sidebar">
+    <div className="sidebar">
         <div className="logo-container">
-         <h1> <FaShoppingCart /></h1>
+          <h1>
+            {" "}
+            <FaShoppingCart  onClick={()=>navigate('cart')}/>
+          </h1>
         </div>
-          <Category handleChange={handleChange} />
-          <Price  handleChange={handleChange}/>
-          <Colors  handleChange={handleChange}/>
-      </section>
-    </>
+        <Category handleChange={handleChange} />
+        <Price handleChange={handleChange} />
+        <Colors handleChange={handleChange} />
+    </div>
   );
 }
 

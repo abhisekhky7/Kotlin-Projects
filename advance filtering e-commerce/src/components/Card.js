@@ -1,6 +1,17 @@
+import { useDispatch } from 'react-redux';
+import {addToCart} from '../Reducer/cartSlice'
+
+
 import { BsFillBagFill } from "react-icons/bs";
+import { generateUniqueId } from '../utils/utils';
 
 const Card = ({ img, title, star, reviews, prevPrice, newPrice }) => {
+
+const dispatch=useDispatch()
+
+const handleClick = ()=>{
+  dispatch(addToCart({title,newPrice,img,id:generateUniqueId()}))
+}
   return (
     <>
       <section className="card">
@@ -17,7 +28,7 @@ const Card = ({ img, title, star, reviews, prevPrice, newPrice }) => {
               <del>{prevPrice}</del> {newPrice}
             </div>
             <div className="bag">
-              <BsFillBagFill className="bag-icon" />
+              <BsFillBagFill onClick={handleClick} className="bag-icon" />
             </div>
           </section>
         </div>
