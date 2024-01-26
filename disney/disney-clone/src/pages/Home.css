@@ -1,0 +1,28 @@
+.home{
+position: relative;
+top: 72px;
+min-height: calc(100vh - 250px);
+padding: 0 calc(3.5vw+5px);
+overflow-x: hidden;
+display: block;
+}
+
+
+
+.homeImg{
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+
+.homeImg img{
+  height:100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+
+}
+
+
