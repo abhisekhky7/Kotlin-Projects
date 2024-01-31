@@ -5,27 +5,6 @@ import Slider from "react-slick";
 import './ImgSlider.css'
 
 
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "red" }}
-      onClick={onClick}
-    />
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "green" }}
-      onClick={onClick}
-    />
-  );
-}
 
 
 
@@ -36,6 +15,7 @@ const ImgSlider = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay:true,
   
   };
   return (

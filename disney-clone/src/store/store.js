@@ -8,9 +8,7 @@ import movieReducer from '../Slicer/MovieSlice'
         user:userReducer,
         movie:movieReducer,
     },
-    // middleware:getDefaultMiddleware({
-    //     serializableCheck:false,
-    // })
+   
 })
 
 export default store;

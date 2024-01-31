@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Link,Outlet} from "react-router-dom";
 import Login from './pages/Login'
 import Header from './pages/Header'
 import Home from "./pages/Home";
+import Detail from "./pages/Detail";
 
 
 
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Login/>}/>
           <Route path="/home" element={<Home/>}/>
+          <Route path="/detail/:id" element={<Detail/>}/>
     </Routes>
     </BrowserRouter>
     </div>

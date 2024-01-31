@@ -6,7 +6,7 @@
     height: 100vh;
 }
 
-.content{
+.loginContainer .content{
     margin-bottom: 10vw;
     width: 100%;
     position: relative;
@@ -47,11 +47,11 @@
     border-radius: 4px;
 }
 
-.loginsignUp a:hover{
+.loginsignUp :hover{
     background-color: #0483ee;
 }
 
-.description{
+.loginDescription{
     color: hsla(0, 0%, 95.3%, 1);
     font-size: 11px;
     margin: 0 0 24px;
