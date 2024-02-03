@@ -1,0 +1,26 @@
+
+.cat li{
+    border:none;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight:700;
+}
+.cat li::after{
+    display: block;
+    content: '';
+    border-bottom: solid 3px red;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+
+}
+
+
+.cat li:hover::after{
+   transform:scaleX(1) ;
+   cursor: pointer;
+
+}
+.list-group-item:hover{
+    cursor: pointer;
+}
+
