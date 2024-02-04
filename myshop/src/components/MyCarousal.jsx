@@ -2,7 +2,7 @@ import React from 'react'
 
 const MyCarousal = () => {
   return (
-    <div id="mycar" className="carousel slide p-1"  data-bs-ride="carousel" data-bs-interval="2500">
+    <div id="mycar" className="carousel slide p-1"  data-bs-ride="carousel" data-bs-interval="2000">
 
   <div className="carousel-indicators">
     <button type="button" data-bs-target="#mycar" data-bs-slide-to="0" className="active"></button>
@@ -12,22 +12,22 @@ const MyCarousal = () => {
 
   </div>
 
-  <div className="carousel-inner" >
-    <div className="carousel-item active">
-      <img src="/images/slider-badag.jpg" alt="Los Angeles" className="d-block w-100"/>
+  <div className="carousel-inner" style={{height:"550px",maxHeight:"400px"}}>
+    <div className="carousel-item active" >
+      <img src="/images/val_slider.jpg" alt="valentine" className="d-block w-100"/>
     </div>
     <div className="carousel-item">
-      <img src="/images/slider-badging.jpg" alt="Chicago" className="d-block w-100"/>
+      <img src="/images/beauty_slider.jpg" alt="beauty" className="d-block w-100"/>
     </div>
     <div className="carousel-item">
-      <img src="/images/slider-scale.jpg" alt="New York" className="d-block w-100"/>
+      <img src="/images/book_slider.jpg" alt=" books" className="d-block w-100"/>
     </div>
     <div className="carousel-item">
-      <img src="/images/slider-scales.jpg" alt="New York" className="d-block w-100"/>
+      <img src="/images/lunar_red.jpg" alt="lunar" className="d-block w-100"/>
     </div>
   </div>
 
-  <button className="carousel-control-prev" type="button" data-bs-target="#mycar" data-bs-slide="prev">
+  <button  className="carousel-control-prev" type="button" data-bs-target="#mycar" data-bs-slide="prev">
     <span className="carousel-control-prev-icon"></span>
   </button>
   <button className="carousel-control-next" type="button" data-bs-target="#mycar" data-bs-slide="next">

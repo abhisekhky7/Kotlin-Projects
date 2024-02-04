@@ -32,13 +32,13 @@ const Card = ({category}) => {
       {loading ? (
         <div className="spinner-border text-muted "/>
       ) : (
-        <div className="m-2 d-flex flex-wrap justify-content-center" style={{border:"2px solid red"}} >
+        <div className="m-2 d-flex flex-wrap justify-content-center" >
           {data.map((item) => (
             <div className="card p-2 m-2" style={{width:"15rem",border:"none"}} key={item.id}>
             <img src={item.image} alt={item.title} style={{ height: "180px", width: "auto", objectFit: "contain" }} />
             <div className="card-body">
               <h5 className="card-title">{item.title}</h5>
-           <div className="d-flex justify-content-end">   <button onClick={()=>handleAdd(item)} >Add</button></div>
+           <div className="d-flex justify-content-end">   <button className="btn btn-outline-danger btn-sm " onClick={()=>handleAdd(item)} > <i className="fa-solid fa-cart-plus"> </i> Add</button></div>
             </div>
           </div>
           ))}
