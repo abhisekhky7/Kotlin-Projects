@@ -2,9 +2,9 @@ import React from 'react'
 
 const MyCarousal = () => {
   return (
-    <div id="mycar" className="carousel slide p-1"  data-bs-ride="carousel" data-bs-interval="2000">
+    <div id="mycar" className=" d-flex carousel slide" style={{maxHeight:"400px"}} data-bs-ride="carousel" data-bs-interval="2000">
 
-  <div className="carousel-indicators">
+  <div className="carousel-indicators"> 
     <button type="button" data-bs-target="#mycar" data-bs-slide-to="0" className="active"></button>
     <button type="button" data-bs-target="#mycar" data-bs-slide-to="1"></button>
     <button type="button" data-bs-target="#mycar" data-bs-slide-to="2"></button>
@@ -12,7 +12,7 @@ const MyCarousal = () => {
 
   </div>
 
-  <div className="carousel-inner" style={{height:"550px",maxHeight:"400px"}}>
+  <div className="carousel-inner" >
     <div className="carousel-item active" >
       <img src="/images/val_slider.jpg" alt="valentine" className="d-block w-100"/>
     </div>

@@ -1,5 +1,11 @@
-.offcanvas{
-    height: 100vh;
+
+
+nav .btn{
+    color:white;
+    border-color:white;
+    letter-spacing: 1px;
 }
 
+/* style={{ color: "white", borderColor: "white", letterSpacing: 1 }}
+style={{ color: "white", borderColor: "white", letterSpacing: 1 }} */
 

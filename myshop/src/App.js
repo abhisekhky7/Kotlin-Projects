@@ -6,10 +6,8 @@ import CanvasContent from './components/Canvas/CanvasContent'
 
 function App() {
   return (
-    <div className="App">
-      <header>
+    <div className="App d-flex flex-column container-fluid p-0 "> 
       <Header/>
-      </header>
       <Home/>
       <CanvasContent/>
     <Footer/>

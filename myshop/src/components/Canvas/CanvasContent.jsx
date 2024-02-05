@@ -14,7 +14,7 @@ function CanvasContent() {
   return (
     <div
       className="offcanvas offcanvas-end"
-      style={{ backgroundColor: "#E3E6E6" }} E3E6E6
+      style={{ backgroundColor: "#E3E6E6" }}
       tabIndex="-1"
       id="cartOffcanvas"
       aria-labelledby="cartOffcanvasLabel"
@@ -64,7 +64,7 @@ function CanvasContent() {
             </h2>
           )}
           <div className="d-flex justify-content-end p-2">
-            {price > 0 ? <p style={{fontWeight:700}}> Total : ${price} </p> : <></>}{" "}
+            {price > 0 ? <p style={{fontWeight:700}}> Total : ${price} </p> : <></>}
           </div>
         </div>
       </div>

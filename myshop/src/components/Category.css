@@ -1,14 +1,30 @@
+.outerCat{
 
+    @media(max-width:700px)  {
+        
+      .cat li {  
+          font-Size:0.6rem;
+          margin-left:-9px;
+          margin-right:-9px;
+        letter-spacing: 2px;
+
+        }
+        
+    }
+}
 .cat li{
     border:none;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     font-weight:700;
+    font-Size:1rem;
 }
+
+
 .cat li::after{
     display: block;
     content: '';
-    border-bottom: solid 3px red;
+    border-bottom: solid 2px red;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
 
@@ -22,5 +38,9 @@
 }
 .list-group-item:hover{
     cursor: pointer;
+}
+
+ .list-group-items.active{
+    color:green;
 }
 

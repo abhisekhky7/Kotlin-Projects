@@ -1,0 +1,23 @@
+.card {
+    width:15rem;
+}
+
+@media (max-width:768px) {
+    .card{
+        width:10rem;
+    }
+
+    .card-title{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:400px) {
+    .card{
+        width: 8rem;
+    }
+
+    .card-title{
+        font-size:0.6rem;
+    }
+}
