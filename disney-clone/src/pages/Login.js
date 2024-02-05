@@ -1,6 +1,5 @@
 import React from "react";
 import "./Login.css";
-import {handleAuth} from './Header'
 const Login = () => {
   return (
     <div className="loginContainer">
