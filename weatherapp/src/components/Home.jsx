@@ -71,7 +71,7 @@ return (
       { weather&&  <div className='container justify-content-center'>
           {console.log(weather.main.temp)}
           <Card weather={weather} city={city} unit={unit} toggleUnit={toggleUnit} />
-          <h2 className='ct mt-3'>Past 12 month Max temperature</h2>
+          <div className='ct container w-50 border border-info'><span id='chartTitle'>Past 12 month Max temperature</span></div>
           <Chart city={weather.name}/>
         </div> 
         }  {/* End of weather */}
