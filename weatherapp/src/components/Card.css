@@ -1,0 +1,33 @@
+
+
+
+.cardContainer{
+    border:"2px solid red";
+    @media (max-width:768px) {
+        flex-direction:column;
+    }
+}
+
+
+
+.ct{
+    display: flex;
+    justify-content: center;
+}
+.card-header{
+    font-size: large;
+    font-weight: 500;
+}
+
+.mc{
+    font-weight: 500;
+}
+
+.innerBody{
+    margin-Top:10px;
+}
+
+.mainHeader{
+    color:rgb(80, 73, 64);
+    padding:1rem;
+}

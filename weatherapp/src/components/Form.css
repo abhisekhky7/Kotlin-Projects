@@ -1,0 +1,26 @@
+.myForm{
+    display: flex;
+    align-items: center;
+}
+
+#myBtn{
+    margin-top: 13px;
+    
+}
+
+.myInput{
+    border:none;
+    text-transform: capitalize;
+
+}
+
+.myInput:focus{
+    outline:none
+}
+
+.myMenu:hover{
+    cursor: pointer;
+}
+
+
+
